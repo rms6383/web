@@ -3,20 +3,62 @@
 <HEAD>
 <TITLE>WEB - Welcome</TITLE>
 <meta charset="utf-8">
+<style>
+a {
+  color: black;
+  text-decoration:  none;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+#grid ol {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+  padding-left:33px;
+}
+body {
+  margin:0;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid #article{
+  padding-left:25px;
+}
+@media(max-width:800px) {
+  #grid{
+    display:block;
+  }
+  #grid ol {
+    border-right:none;
+  }
+    h1 {
+      border-bottom:none;
+}
+}
+</style>
 </HEAD>
 <BODY>
 <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
 <ol>
   <li><a href="html.html">HTML</a></li>
   <li><a href="css.html">CSS</a></li>
   <li><a href="javascript.html">JavaScript</a></li>
 </ol>
+<div id="article">
 <h2><u>HTML</u></h2>
 <p>
-<a href="https://ko.wikipedia.org/wiki/HTML" target="_blank" title="html">HTML은 하이퍼텍스트 마크업 언어</a>
+HTML은 하이퍼텍스트 마크업 언어
 (HyperText Markup Language, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)라는
 의미의 웹 페이지를 위한 지배적인 마크업 언어다.
-<img src="coding.jpg" width="100%">
 </p>
 <p>
 HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는
@@ -27,4 +69,6 @@ HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주
 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다.
 HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.
 </p>
+</div>
+</div>
 </HTML>
