@@ -3,56 +3,20 @@
 <HEAD>
 <TITLE>WEB - Welcome</TITLE>
 <meta charset="utf-8">
-<style>
-a {
-  color: black;
-  text-decoration:  none;
-}
-h1 {
-  font-size: 40px;
-  text-align: center;
-  border-bottom:1px solid gray;
-  margin:0;
-  padding:20px;
-}
-#grid ol {
-  border-right:1px solid gray;
-  width:100px;
-  margin:0;
-  padding:20px;
-  padding-left:33px;
-}
-body {
-  margin:0;
-}
-#grid{
-  display:grid;
-  grid-template-columns: 150px 1fr;
-}
-#grid #article{
-  padding-left:25px;
-}
-@media(max-width:800px) {
-  #grid{
-    display:block;
-  }
-  #grid ol {
-    border-right:none;
-  }
-    h1 {
-      border-bottom:none;
-}
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="color.js"></script>
 </HEAD>
 <BODY>
 <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
+    <div id="list">
+      <input type="button" value="night" onclick="nightdayhandles(this)">
 <ol>
   <li><a href="html.html">HTML</a></li>
   <li><a href="css.html">CSS</a></li>
   <li><a href="javascript.html">JavaScript</a></li>
 </ol>
+</div>
 <div id="article">
 <h2><u>HTML</u></h2>
 <p>
